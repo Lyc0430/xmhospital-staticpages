@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02列表</title>
+</head>
+<body>
+<!--定义列表-->
+<dl>
+<!--    数据项-->
+    <dt>北京</dt>
+<!--    数据定义-->
+    <dd>我国首都</dd>
+    <dt>杭州</dt>
+    <dd>浙江省省会</dd>
+</dl>
+<!--有序列表-->
+<!--type属性值为制定编号的类型类似罗马数字,数字,中文,start是从哪个位子开始,reversed属性为是否需要列表前序号倒叙显示-->
+<ol type="I" start="2" reversed>
+<!--    会自动出现小符号-->
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+<!--无序列表-->
+<ul>
+    <li>
+        <h3>浙江</h3>
+        <ul>
+<!--            ul的子标签只能是li,li里面能存放任何东西,li不能散着放-->
+<!--            type属性disc实心圆,circle空心圆，square实心方块（该方法已经被废弃,记住即可)-->
+            <li>杭州</li>
+            <li>宁波</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

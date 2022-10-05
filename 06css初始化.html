@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css初始化</title>
+</head>
+<body>
+<div class="box">
+    <p>你好啊</p>
+</div>
+<p class="test2">你好啊</p>
+<p id="test1">你好啊</p>
+<h3 class="spec">你好啊</h3>
+<h3>你好啊</h3>
+
+<a href="www.baidu.com">前往百度</a>
+<!--css3基本语法-->
+<!--css注释是/* */-->
+<style>
+/*标签选择器*/
+/*这将选择页面上所有的标签*/
+/*常用于标签初始化*/
+span{
+
+}
+ul{
+    list-style: none;/*去除小圆点*/
+}
+/*使用#号前缀对id进行样式配置*/
+#test1{
+    color: rebeccapurple;
+}
+/*class选择器为前面加.*/
+.test2{
+    color: aqua;
+}
+/*后代选择器*/
+.box p{
+    color: aqua;
+}
+
+/*交集选择器*/
+/*选择既是类又是该元素的标签*/
+h3.spec{
+    color: antiquewhite;
+}
+/*并集选择器*/
+/*两者都选择中间要有逗号*/
+ul,ol{
+    list-style: none;
+}
+/*id值是单一对应的,class可以对多个对象进行配置,一个对象可以有多个类*/
+
+/*伪类*/
+a:link{
+    /*未访问过的链接*/
+    color:plum;
+}
+a:visited{
+    /*已经被访问过的链接*/
+    color: black;
+}
+a:hover{
+    /*悬停时触发*/
+    background-color: gold;
+}
+a:active{
+    /*点击鼠标未松手*/
+    font-size: 20px;
+}
+
+/*元素关系选择器*/
+/*子选择器*/
+/*使用大于号分格两个元素*/
+/*子选择器只会选择box后第一个元素p*/
+.box>p{
+
+}
+/*相邻兄弟选择器*/
+h3~span{
+    /*选择h3后面的span,同层级内*/
+
+}
+</style>
+
+</body>
+
+</html>

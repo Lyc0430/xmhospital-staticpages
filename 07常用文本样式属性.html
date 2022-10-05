@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用文本样式属性</title>
+    <style>
+        /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+        @font-face {
+            font-family: "阿里妈妈数黑体 Bold";font-weight: 700;src: url("//at.alicdn.com/wf/webfont/iagw1GiwzojH/v_F-U0Qt0wxy9MPd_IC9I.woff2") format("woff2"),
+        url("//at.alicdn.com/wf/webfont/iagw1GiwzojH/ASE__8DA3u1s65Ry0k8sz.woff") format("woff");
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+<!--color属性改变文字颜色-->
+<!--fontsize用于设置文字大小，单位通常为px，默认文字通常为16px-->
+<!--fontweight设置字体粗细，normal值等值400，bold加粗等值700，lighter更细大多数中文不支持，bolder更粗大多数中文不支持-->
+<!--fontstyle字体倾斜，normal取消倾斜,italic设置倾斜(常用),oblique设置为倾斜字体(用常规字体模拟倾斜,不常用)-->
+<!--text-decoration设置文本修饰线外观,none无修饰线,underline下划线,line-through删除线-->
+<!--fontfamily设置字体,浏览器会从前往后进行适配,后面的字体会作为后备，必须把中文字体放在后面,不能放在英文字体前面-->
+
+<!--text-indent首行缩进2em等于缩进两个字符-->
+<p style="text-indent: 2em;line-height: 1.5">疯牛病低俗啊好的奶粉加嫂i了活动监视器啊</p>
+<!--line-height定义行高，行高为第一行文字自顶到第二行文字的自顶，属性可以是px，也可以直接用倍数,表示当前字号的1.5倍-->
+<p id="para1">imooc测试</p>
+
+<p id="para2">imooc测试</p>
+
+<p id="para3">imooc测试</p>
+
+<p id="para4">imooc测试</p>
+
+<p id="para5">imooc测试</p>
+
+<p id="para6">imooc测试</p>
+<div class="box">
+    <ul>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+        <li>你好</li>
+    </ul>
+</div>
+<!--文本相关继承性-->
+<!--只要在文字外部框体写文字样式,会被继承到这-->
+<!--如果在外部和内部都有定义,会以最靠近元素的样式为准-->
+<style>
+    .box{
+        text-align: center;
+        color: red;
+    }
+    #para1{
+        font-family: "Songti SC";
+    }
+    #para2{
+        font-family: "fangsong";
+    }
+    #para3{
+        font-family: "sans-serif";
+    }
+    #para4{
+        font-family: "阿里妈妈数黑体 Bold";
+    }
+
+</style>
+</body>
+</html>

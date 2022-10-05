@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型</title>
+</head>
+<body>
+<div class="box1">
+<h3>代表你就扼杀我回复大家快帮我送饭的牛哦撒谎烦恼产生哇哦亲都是几千年东成西就其实我都不完全</h3>
+</div>
+<div class="box2">
+    <h1>你好</h1>
+</div>
+
+</body>
+<style>
+  .box1{
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    border: 1px solid red;
+  /*  边框宽度 线型  边框颜色*/
+    padding: 20px;
+  /*  内边距*/
+    margin: 10px;
+    /*外边距 有四个方向和padding相似*/
+    /*margin有塌陷现象,上下会以最大值为准,左右没有塌陷现象*/
+  }
+  .box2{
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      /*上下0,左右自动,剧中显示*/
+      box-sizing: border-box;
+      /*box-sizing: 添加后盒子变为内缩而不外扩*/
+      display: inline;
+     /*inline 转为行内应用,block转换成块级*/
+  }
+  *{
+      margin: 0;
+      padding: 0;
+  }
+</style>
+</html>

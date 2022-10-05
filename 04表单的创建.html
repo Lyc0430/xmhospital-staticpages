@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单的创建</title>
+</head>
+<body>
+<!--以form元素开始-->
+<!--action属性表示要提交到后台程序的网址-->
+<!--method属性为表单提交方式,例如get,post-->
+<form action="" method="post">
+<!--    单行文本框,输入类型为文本-->
+<!--    value的值为文本框中默认有的值-->
+<!--    placeholder为输入提示，不是文本框的值-->
+<!--    disable为锁死该元素-->
+<input type="text" value="123" placeholder="请输入" disabled>
+
+<!--    单选按钮-->
+<!--    设置成radio属性就为按钮-->
+<!--name值为将按钮设置成一组-->
+<!--value值为传给后端的值-->
+<input type="radio" name="sex" value="男">男
+<input type="radio" name="sex" value="女">女
+<!--    解决点击字就能选择的标签label-->
+    <label>
+        <input type="radio" name="sex">男
+    </label>
+    <label>
+        <input type="radio" name="sex">女
+    </label>
+<!--    复选框-->
+    <input type="checkbox" name="hobby" value="足球">足球
+    <input type="checkbox" name="hobby">篮球
+    <input type="checkbox" name="hobby">排球
+<!--    密码框-->
+<!--    密码框内容会被隐藏-->
+    <input type="password" >
+<!--    下拉菜单-->
+    select包裹option选项组成下拉菜单,value为提交到服务器的值
+    <select>
+        <option value="alipay">
+            支付宝
+        </option>
+        <option value="wx">
+            微信
+        </option>
+    </select>
+<!--    多行文本框-->
+    多行文本框有rows和cols两个属性，定义多行文本框行数和列数
+    <textarea cols="10" rows="20">
+
+    </textarea>
+<!--    三种按钮-->
+        <button>标准按钮和input button一致</button>
+    <input type="button">
+    <input type="submit" value="提交表单，会提交到action定义的后台网址">提交按钮
+    <input type="reset">重制表单
+<!--颜色选择控件-->
+    <input type="color">
+<!--    日期和时间选择控件-->
+    <input type="date">
+    <input type="time">
+<!--    电子邮件输入控件，会自动校验-->
+    <input type="email">
+<!--    必选项目requird-->
+    <input type="text" required>
+<!--    限制大小数min max-->
+    <input type="number" min="10" max="20">
+<!--    数字拖拽条-->
+    <input type="range" min="10" max="20">
+<!--    搜索框-->
+    <input type="search">
+<!--    让用户输入网址，会自动校验网址-->
+    <input type="url">
+<!--    智能控件datalist-->
+    <input type="text" list="testlist">
+    <datalist id="testlist">
+        <option value="山西">
+        <option value="山东">
+        <option value="广西">
+        <option value="广东">
+    </datalist>
+
+</form>
+</body>
+</html>
